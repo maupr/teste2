@@ -136,7 +136,7 @@ Dados”)
 
 **Script de exemplo:**
 
->   SELECT A.[referencia]  
+   SELECT A.[referencia]  
 >   ,A.[CodOrgaoSIAFI]  
 >   ,A.[NumCNPJOrgao]  
 >   ,A.[SigOrgao]  
@@ -149,11 +149,11 @@ Dados”)
 >   ,A.[FlgUnidadesComVinculoDireto]  
 >   ,B.CodUG  
 >   ,B.NomUG  
->
->   FROM [dw_orgaos].[novoPortal].[historico_orgao] A  
->   LEFT JOIN [dw_orgaos].[novoPortal].[historico_ug] B ON B.[CodOrgaoSIAFI] =
->   A.[CodOrgaoSIAFI]  
->   WHERE A.[referencia] = '201812'
+
+   FROM [dw_orgaos].[novoPortal].[historico_orgao] A  
+   LEFT JOIN [dw_orgaos].[novoPortal].[historico_ug] B ON B.[CodOrgaoSIAFI] =
+   A.[CodOrgaoSIAFI]  
+   WHERE A.[referencia] = '201812'
 
 **1.3** novoPortal.historico_uo
 
@@ -179,7 +179,7 @@ Dados”)
 
 **Script de exemplo:**
 
->   SELECT A.[referencia]  
+   SELECT A.[referencia]
 >   ,A.[CodOrgaoSIAFI]  
 >   ,A.[NumCNPJOrgao]  
 >   ,A.[SigOrgao]  
@@ -192,7 +192,6 @@ Dados”)
 >   ,A.[FlgUnidadesComVinculoDireto]  
 >   ,B.CodUnidadeorcamentaria ,B.NomUnidadeOrcamentaria
 
->   FROM [dw_orgaos].[novoPortal].[historico_orgao] A  
->   LEFT JOIN [dw_orgaos].[novoPortal].[historico_uo] B ON B.[CodOrgaoSIAFI] =
->   A.[CodOrgaoSIAFI]  
->   WHERE A.[referencia] = '201812'
+   FROM [dw_orgaos].[novoPortal].[historico_orgao] A  
+   LEFT JOIN [dw_orgaos].[novoPortal].[historico_uo] B ON B.[CodOrgaoSIAFI] = A.[CodOrgaoSIAFI]    
+   WHERE A.[referencia] = '201812'
